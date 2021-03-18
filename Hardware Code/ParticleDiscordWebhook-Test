@@ -1,0 +1,12 @@
+String data = String(10);
+void setup() {
+    
+}
+
+void loop(){
+    
+    Particle.publish("status", data, PRIVATE);
+    delay(1s);
+    Particle.publish("status", data, PRIVATE);
+    delay(1s);
+}
